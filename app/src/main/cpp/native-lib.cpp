@@ -18,7 +18,8 @@ void lib_main() {
         }
 
         // Initialize the classes
-        ListCBaseEntry::add(std::make_shared<ExampleEntry>());
+        ListCBaseEntry::add(std::make_shared<Account>());
+        ListCBaseEntry::add(std::make_shared<User>());
         ListCBaseEntry::Initialize();
     }).detach();
 }
